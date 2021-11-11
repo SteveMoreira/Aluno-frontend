@@ -1,7 +1,7 @@
-import axios from 'axios'
-
+import axios from 'axios';
+import dotenv from 'dotenv';
+dotenv.config();
 const api = axios.create({
-baseURL: 'https://aluno-backenddd.herokuapp.com'
+baseURL: process.env.REACT_APP_BACKEND
 })
-
 export default api;
